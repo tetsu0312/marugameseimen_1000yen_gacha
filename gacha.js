@@ -321,9 +321,7 @@ ${resultLines.join("\n")}
 　合計:${total}円（残り:${1000 - total}円）
 `.trim();
 
-    const resultTextWithTotal = `${resultText}\n合計：${total}円`;
-
-    setupXPost(resultText);
+setupXPost(resultText);
 
     resultEl.classList.add("show");
     btn.disabled = false;
