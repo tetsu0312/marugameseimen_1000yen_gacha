@@ -111,7 +111,7 @@ body {
 ============================== */
 
 #spinning {
-  margin-top: 32px;
+  margin-top: 20px;
   font-size: 18px;
   opacity: 0;
   transform: translateY(10px);
@@ -128,7 +128,7 @@ body {
 ============================== */
 
 #result {
-  margin-top: 16px;
+  margin-top: 8px;
   opacity: 0;
   transform: translateY(12px);
   transition: opacity 0.4s ease, transform 0.4s ease;
