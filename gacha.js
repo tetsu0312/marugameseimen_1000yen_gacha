@@ -256,9 +256,9 @@ https://tetsu0312.github.io/marugameseimen_1000yen_gacha/
     remaining -= udonItem.price;
 
     // ==============================
-    // ② サイドを付けるか？（80%）
+    // ② サイドを付けるか？（90%）
     // ==============================
-    const shouldAddSide = Math.random() < 0.8;
+    const shouldAddSide = Math.random() < 0.9;
 
     if (shouldAddSide && remaining > 0) {
       let continueAdding = true;
