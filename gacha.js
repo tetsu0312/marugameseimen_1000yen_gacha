@@ -155,6 +155,36 @@ document.addEventListener("DOMContentLoaded", () => {
   // ==============================
   const pickRandom = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
+  // ==============================
+  // Xにポスト設定
+  // ==============================
+const postXBtn = document.getElementById("postXBtn");
+
+function setupXPost(resultText) {
+  if (!postXBtn) return;
+  const tweetText = `
+丸亀製麺1000円ガチャ回してみた！🥢✨
+
+🍜 注文内容
+${resultText}
+
+▼ガチャはこちら
+https://tetsu0312.github.io/marugameseimen_1000yen_gacha/
+
+#丸亀製麺 #1000円ガチャ
+  `.trim();
+
+  const url =
+    "https://twitter.com/intent/tweet?text=" +
+    encodeURIComponent(tweetText);
+
+  postXBtn.style.display = "block";
+  postXBtn.onclick = () => {
+    window.open(url, "_blank");
+  };
+}
+
+  
   // weight付きカテゴリ抽選
   const pickWeightedCategory = (categories) => {
     const pool = [];
@@ -175,6 +205,10 @@ document.addEventListener("DOMContentLoaded", () => {
     resultEl.classList.remove("show");
     resultEl.innerHTML = "";
     spinningEl.classList.remove("show");
+
+    if (postXBtn) {
+    postXBtn.style.display = "none";
+    }
 
     // スピン中メッセージ
     spinningEl.textContent = pickRandom(spinningMessages);
@@ -275,7 +309,16 @@ document.addEventListener("DOMContentLoaded", () => {
       </p>
     `;
 
+    // ==============================
+    // X用 結果テキスト生成
+    // ==============================
+    const resultText = selected
+    .map(item => `${item.name}（${item.price}円）`)
+    .join("、");
+    setupXPost(resultText);
+
     resultEl.classList.add("show");
     btn.disabled = false;
+
   });
 });
