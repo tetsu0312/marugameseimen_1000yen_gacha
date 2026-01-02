@@ -205,7 +205,10 @@ box-shadow:
 }
 
 .hint-body {
-  text-align:left;
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.7;
   white-space: pre-line;
 }
 
