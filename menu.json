@@ -104,29 +104,42 @@
     }
   ],
 
-  "tempura": [
-    { "name": "かしわ天", "price": 210 },
-    { "name": "野菜かき揚げ", "price": 190 },
-    { "name": "えび天", "price": 190 },
-    { "name": "ちくわ天", "price": 160 },
-    { "name": "ちくわ磯部天", "price": 160 },
-    { "name": "さつまいも天", "price": 160 },
-    { "name": "れんこん天", "price": 150 },
-    { "name": "かぼちゃ天", "price": 140 }
-  ],
-
-  "side": [
-    { "name": "いなり", "price": 150 },
-    { "name": "鮭おにぎり", "price": 160 },
-    { "name": "梅おにぎり", "price": 160 },
-    { "name": "明太子おにぎり", "price": 160 },
-    { "name": "こんぶおにぎり", "price": 160 },
-    { "name": "白ごはん（並）", "price": 170 },
-    { "name": "白ごはん（大）", "price": 220 }
-  ],
-
-  "udonuts": [
-    { "name": "うどーなつ きなこ味（5個入り）", "price": 300 },
-    { "name": "うどーなつ きび糖味（5個入り）", "price": 300 }
+{
+  "sideCategories": [
+    {
+      "type": "tempura",
+      "weight": 7,
+      "items": [
+        { "name": "かしわ天", "price": 210 },
+        { "name": "野菜かき揚げ", "price": 190 },
+        { "name": "えび天", "price": 190 },
+        { "name": "ちくわ天", "price": 160 },
+        { "name": "ちくわ磯部天", "price": 160 },
+        { "name": "さつまいも天", "price": 160 },
+        { "name": "れんこん天", "price": 150 },
+        { "name": "かぼちゃ天", "price": 140 }
+      ]
+    },
+    {
+      "type": "side",
+      "weight": 2,
+      "items": [
+        { "name": "いなり", "price": 150 },
+        { "name": "鮭おにぎり", "price": 160 },
+        { "name": "梅おにぎり", "price": 160 },
+        { "name": "明太子おにぎり", "price": 160 },
+        { "name": "こんぶおにぎり", "price": 160 },
+        { "name": "白ごはん（並）", "price": 170 },
+        { "name": "白ごはん（大）", "price": 220 }
+      ]
+    },
+    {
+      "type": "udonuts",
+      "weight": 1,
+      "items": [
+        { "name": "うどーなつ きなこ味（5個入り）", "price": 300 },
+        { "name": "うどーなつ きび糖味（5個入り）", "price": 300 }
+      ]
+    }
   ]
 }
