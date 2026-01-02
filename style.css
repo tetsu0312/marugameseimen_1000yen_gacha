@@ -107,6 +107,23 @@ body {
 }
 
 /* ==============================
+   スピン中メッセージ
+============================== */
+
+#spinning {
+  margin-top: 32px;
+  font-size: 18px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+#spinning.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==============================
    結果アニメーション
 ============================== */
 
@@ -122,21 +139,6 @@ body {
   transform: translateY(0);
 }
 
-/* ==============================
-   結果表示
-============================== */
-
-#shop {
-  font-size: 22px;
-  color: #1f3b57;
-  margin-bottom: 12px;
-}
-
-#comment {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.6;
-}
 
 /* ==============================
    スマホ用（額縁を少し細く）
