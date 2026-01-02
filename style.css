@@ -199,7 +199,7 @@ box-shadow:
 }
 
 /* ==============================
-   スマホ用（額縁を少し細く）
+   スマホ用調整
 ============================== */
 
 @media (max-width: 480px) {
@@ -208,7 +208,7 @@ box-shadow:
     padding: 24px; /* スマホは少し細め */
     font-size: 14px;
   }
-
+   
   .center-lane {
     min-height: calc(100svh - 48px);
     padding-top: 20px;
