@@ -258,7 +258,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ${listHtml}
       </ul>
       <p class="result-summary">
-        合計：${total}円（残り：${1000 - total}円）
+        合計:${total}円（残り:${1000 - total}円）
       </p>
     `;
 
