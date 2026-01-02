@@ -5,125 +5,116 @@
       "店舗により価格・販売メニューが異なる場合があります。",
       "得サイズは持ち帰り対象外の表記がある商品があります。",
       "対象外：期間限定、店舗限定、釜揚げ家族うどん／丸亀お子さまもちもちセット（小かけ・小ぶっかけ）"
-    ],
+      ],
     "updated_hint": "2026-01-02"
   },
+
   "udon": [
-     {
+    {
       "name": "釜揚げうどん",
       "temps": ["温"],
       "sizes": [
-        { "size": "並", "price": 370 },
-        { "size": "大", "price": 550 },
-        { "size": "得", "price": 730 }
+        { "size": "並", "price": 370, "weight": 7 },
+        { "size": "大", "price": 550, "weight": 2 },
+        { "size": "得", "price": 730, "weight": 1 }
       ]
     },
-
-     {
+    {
       "name": "かけうどん",
       "temps": ["温"],
       "sizes": [
-        { "size": "小", "price": 320 },
-        { "size": "並", "price": 420 },
-        { "size": "大", "price": 600 },
-        { "size": "得", "price": 780 }
+        { "size": "小", "price": 320, "weight": 1 },
+        { "size": "並", "price": 420, "weight": 6 },
+        { "size": "大", "price": 600, "weight": 2 },
+        { "size": "得", "price": 780, "weight": 1 }
       ]
     },
-    
     {
       "name": "ぶっかけうどん",
       "temps": ["温", "冷"],
       "sizes": [
-        { "size": "小", "price": 320 },
-        { "size": "並", "price": 420 },
-        { "size": "大", "price": 600 },
-        { "size": "得", "price": 780 }
+        { "size": "小", "price": 320, "weight": 1 },
+        { "size": "並", "price": 420, "weight": 6 },
+        { "size": "大", "price": 600, "weight": 2 },
+        { "size": "得", "price": 780, "weight": 1 }
       ]
     },
-    
     {
       "name": "ざるうどん",
       "temps": ["冷"],
       "sizes": [
-        { "size": "並", "price": 420 },
-        { "size": "大", "price": 600 },
-        { "size": "得", "price": 780 }
+        { "size": "並", "price": 420, "weight": 7 },
+        { "size": "大", "price": 600, "weight": 2 },
+        { "size": "得", "price": 780, "weight": 1 }
       ]
     },
-
-     {
+    {
       "name": "釜玉うどん",
       "temps": ["温"],
       "sizes": [
-        { "size": "並", "price": 530 },
-        { "size": "大", "price": 710 },
-        { "size": "得", "price": 890 }
+        { "size": "並", "price": 530, "weight": 7 },
+        { "size": "大", "price": 710, "weight": 2 },
+        { "size": "得", "price": 890, "weight": 1 }
       ]
     },
-
-         {
+    {
       "name": "明太釜玉うどん",
       "temps": ["温"],
       "sizes": [
-        { "size": "並", "price": 620 },
-        { "size": "大", "price": 800 },
-        { "size": "得", "price": 980 }
+        { "size": "並", "price": 620, "weight": 7 },
+        { "size": "大", "price": 800, "weight": 2 },
+        { "size": "得", "price": 980, "weight": 1 }
       ]
     },
-
-         {
+    {
       "name": "おろし醤油うどん",
       "temps": ["温"],
       "sizes": [
-        { "size": "並", "price": 530 },
-        { "size": "大", "price": 710 },
-        { "size": "得", "price": 890 }
+        { "size": "並", "price": 530, "weight": 7 },
+        { "size": "大", "price": 710, "weight": 2 },
+        { "size": "得", "price": 890, "weight": 1 }
       ]
     },
-    
     {
       "name": "とろ玉うどん",
       "temps": ["温", "冷"],
       "sizes": [
-        { "size": "並", "price": 620 },
-        { "size": "大", "price": 800 },
-        { "size": "得", "price": 980 }
+        { "size": "並", "price": 620, "weight": 7 },
+        { "size": "大", "price": 800, "weight": 2 },
+        { "size": "得", "price": 980, "weight": 1 }
       ]
     },
-
-        {
+    {
       "name": "とろろ醤油うどん",
       "temps": ["温", "冷"],
       "sizes": [
-        { "size": "並", "price": 510 },
-        { "size": "大", "price": 690 },
-        { "size": "得", "price": 870 }
+        { "size": "並", "price": 510, "weight": 7 },
+        { "size": "大", "price": 690, "weight": 2 },
+        { "size": "得", "price": 870, "weight": 1 }
       ]
     },
-
-     {
+    {
       "name": "きつねうどん",
       "temps": ["温"],
       "sizes": [
-        { "size": "並", "price": 590 },
-        { "size": "大", "price": 770 },
-        { "size": "得", "price": 950 }
+        { "size": "並", "price": 590, "weight": 7 },
+        { "size": "大", "price": 770, "weight": 2 },
+        { "size": "得", "price": 950, "weight": 1 }
       ]
     }
-    
   ],
-  
+
   "tempura": [
     { "name": "かしわ天", "price": 210 },
     { "name": "野菜かき揚げ", "price": 190 },
     { "name": "えび天", "price": 190 },
     { "name": "ちくわ天", "price": 160 },
     { "name": "ちくわ磯部天", "price": 160 },
-    { "name": "さつまいも天", "price": 160 }, 
-    { "name": "れんこん天", "price": 150 }, 
+    { "name": "さつまいも天", "price": 160 },
+    { "name": "れんこん天", "price": 150 },
     { "name": "かぼちゃ天", "price": 140 }
-    
   ],
+
   "side": [
     { "name": "いなり", "price": 150 },
     { "name": "鮭おにぎり", "price": 160 },
@@ -134,8 +125,8 @@
     { "name": "白ごはん（大）", "price": 220 }
   ],
 
-    "udonuts": [
-    { "name": "うどーなつ　きなこ味(5個入り)", "price": 300 },
-    { "name": "うどーなつ　きび糖味(5個入り)", "price": 300 }
+  "udonuts": [
+    { "name": "うどーなつ きなこ味（5個入り）", "price": 300 },
+    { "name": "うどーなつ きび糖味（5個入り）", "price": 300 }
   ]
 }
