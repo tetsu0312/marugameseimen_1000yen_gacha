@@ -224,16 +224,32 @@ box-shadow:
   }
 
   #gachaBtn {
-    font-size: 16px;
+    font-size: 20px;
     padding: 12px 20px;
     margin-bottom: 12px;
   }
 
+  /* 結果タイトル */
   .result-title {
-    font-size: 18px;
+    font-size: 22px;      /* ← 少し存在感アップ */
+    margin-bottom: 16px;
+    line-height: 1.4;
   }
 
+  /* 結果リスト */
+  .result-list {
+    font-size: 16px;      /* ← 読みやすさ重視 */
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .result-list li {
+    margin-bottom: 10px; /* ← 指で追いやすく */
+  }
+
+  /* 結果サマリー */
   .result-summary {
-    font-size: 14px;
+    font-size: 16px;      /* ← スマホ基準サイズ */
+    line-height: 1.6;
   }
 }
