@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background-color: #00afcc;
+  background-color: #e8dbc5;
   color: #333;
   text-align: center;
   min-height: 100svh;
@@ -37,11 +37,10 @@ body {
   border-radius: 14px;
 
   /* ボーダー＆影（境界表現） */
-  outline: 1px solid rgba(255, 255, 255, 0.8);
-  box-shadow:
-    0 0 0 6px rgba(255, 255, 255, 0.35),
-    0 12px 28px rgba(0, 0, 0, 0.18);
-}
+outline: 1px solid #f4efe6;
+box-shadow:
+  0 0 0 6px #f4efe6,
+  0 12px 28px rgba(0, 0, 0, 0.18);
 
 /* ==============================
    タイトル
