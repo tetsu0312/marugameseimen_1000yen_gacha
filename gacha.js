@@ -1,6 +1,6 @@
-const btn = document.getElementById('gachaBtn');
-const result = document.getElementById('result');
-
-btn.addEventListener('click', () => {
-  result.textContent = 'ガチャ回したばい！😆';
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("gachaBtn");
+  btn.addEventListener("click", () => {
+    console.log("回ったばい！");
+  });
 });
