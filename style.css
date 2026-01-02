@@ -189,6 +189,7 @@ body {
 }
 
 .result-list {
+  text-align: left;
   margin: 0 0 12px;
   padding-left: 1.2em;
 }
