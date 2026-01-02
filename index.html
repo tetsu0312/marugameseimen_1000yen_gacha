@@ -9,34 +9,36 @@
 </head>
 <body>
 
-  <!-- 中央レーン -->
   <main class="center-lane">
 
-    <!-- タイトル -->
     <h1>丸亀製麺1000円ガチャ</h1>
 
-    <!-- 説明文 -->
     <p class="subtitle">
-    メニュー迷っとる？<br>
-    そんなときはガチャたい！😆
+      メニュー迷っとる？<br>
+      そんなときはガチャたい！😆
     </p>
     
-    <!-- ボタン -->
     <button id="gachaBtn">ガチャを回す🥢</button>
 
-    <!-- 結果表示前のメッセージ -->
+    <!-- スピン中メッセージ -->
     <div id="spinning"></div>
 
-    <!-- 結果表示 -->
-    <div id="result"></div>
+    <!-- 結果エリア -->
+    <section id="result" aria-live="polite">
+      <!-- JSで以下を生成
+        <h2 class="result-title"></h2>
+        <ul class="result-list"></ul>
+        <p class="result-summary"></p>
+      -->
+    </section>
 
     <footer class="footer">
-    <a href="about.html">このサイトについて🍴</a>
+      <a href="about.html">このサイトについて🍴</a>
     </footer>
+
   </main>
   
- <!-- js -->
- <script src="gacha.js"></script>
+  <script src="gacha.js"></script>
   
 </body>
 </html>
