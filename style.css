@@ -111,7 +111,7 @@ body {
 ============================== */
 
 #spinning {
-  margin-top: 18px;
+  margin-top: 14px;
   font-size: 18px;
   opacity: 0;
   transform: translateY(10px);
