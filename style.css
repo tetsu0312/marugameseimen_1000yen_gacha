@@ -194,25 +194,3 @@ body {
   color: #999;
   text-decoration: none;
 }
-
-/* ==============================
-   about.html調整用
-============================== */
-
-.about {
-  align-items: stretch;
-}
-
-.about h1 {
-  text-align: center;
-}
-
-.about-text {
-  max-width: 520px;
-  margin: 0 auto;
-  text-align: left;
-  line-height: 1.7;
-
-  /* ここが肝 */
-  white-space: pre-line;
-}
