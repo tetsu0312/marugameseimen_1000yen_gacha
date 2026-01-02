@@ -41,6 +41,7 @@ outline: 1px solid #FFF1F1;
 box-shadow:
   0 0 0 6px #FFF1F1,
   0 12px 28px rgba(0, 0, 0, 0.18);
+}
 
 /* ==============================
    タイトル
@@ -123,15 +124,8 @@ box-shadow:
 }
 
 /* ==============================
-   結果アニメーション
+   結果表示（中身）
 ============================== */
-
-#result {
-  margin-top: 0;
-  opacity: 0;
-  transform: translateY(0px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
-}
 
 #result.show {
   margin-top: 0;
@@ -139,11 +133,11 @@ box-shadow:
   transform: translateY(0);
 }
 
-/* ==============================
-   結果表示（中身）
-============================== */
-
 #result {
+  margin-top: 0;
+  opacity: 0;
+  transform: translateY(0px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
   color: #000000;
 }
 
