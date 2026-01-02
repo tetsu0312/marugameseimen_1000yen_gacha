@@ -200,12 +200,6 @@ box-shadow:
    hint.html調整用
 ============================== */
 
-.hint-lead {
-  text-align: center;
-  font-weight: bold;
-  margin: 0 0 4px;
-}
-
 .hint-body {
   white-space: pre-line;
 }
