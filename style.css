@@ -276,25 +276,31 @@ box-shadow:
 ============================== */
 
 #postXBtn {
-  margin: 18px auto 6px; 
+  margin: 18px auto 6px;
   padding: 10px 20px;
   font-size: 14px;
   font-weight: bold;
+
   color: #fff;
+  background-color: #1d9bf0; 
+
   border: none;
   border-radius: 999px;
+
   cursor: pointer;
+
+  transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 /* ホバー */
 #postXBtn:hover {
-  opacity: 0.9;
+  background-color: #1a8cd8; /* 少し濃く */
 }
 
 /* 押したとき */
 #postXBtn:active {
-  transform: translateY(3px);
-  box-shadow: 0 1px 0 #178cd8;
+  transform: translateY(1px);
+  background-color: #167ac6;
 }
 
 @media (max-width: 480px) {
