@@ -1,13 +1,23 @@
 {
   "udon": [
-    { "name": "釜玉うどん", "price": 640 },
-    { "name": "ぶっかけうどん", "price": 590 },
-    { "name": "かけうどん", "price": 420 }
+    { "name": "かけうどん", "price": 390 },
+    { "name": "ぶっかけうどん", "price": 420 },
+    { "name": "釜玉うどん", "price": 460 },
+    { "name": "ざるうどん", "price": 420 },
+    { "name": "明太釜玉うどん", "price": 520 },
+    { "name": "とろ玉うどん", "price": 520 }
+  ],
+  "tempura": [
+    { "name": "野菜かき揚げ", "price": 180 },
+    { "name": "ちくわ天", "price": 150 },
+    { "name": "えび天", "price": 190 },
+    { "name": "かしわ天", "price": 180 },
+    { "name": "れんこん天", "price": 150 }
   ],
   "side": [
-    { "name": "かしわ天", "price": 190 },
-    { "name": "えび天", "price": 190 },
-    { "name": "野菜かき揚げ", "price": 180 },
-    { "name": "おにぎり", "price": 140 }
+    { "name": "おにぎり", "price": 140 },
+    { "name": "いなり", "price": 140 },
+    { "name": "白ごはん", "price": 170 },
+    { "name": "明太おにぎり", "price": 160 }
   ]
 }
