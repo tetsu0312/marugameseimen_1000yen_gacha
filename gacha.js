@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ==============================
   // Xにポスト設定
   // ==============================
-const postXBtn = document.getElementById("postXBtn");
+  const postXBtn = document.getElementById("postXBtn");
 
 function setupXPost(resultText) {
   if (!postXBtn) return;
@@ -315,6 +315,9 @@ https://tetsu0312.github.io/marugameseimen_1000yen_gacha/
     const resultText = selected
     .map(item => `${item.name}（${item.price}円）`)
     .join("、");
+
+    const resultTextWithTotal = `${resultText}\n合計：${total}円`;
+
     setupXPost(resultText);
 
     resultEl.classList.add("show");
