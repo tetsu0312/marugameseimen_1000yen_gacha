@@ -167,6 +167,10 @@ box-shadow:
 ============================== */
 
 .footer {
+  order: 3;
+}
+
+.footer {
   margin-top: auto;
   padding-top: 24px;
   font-size: 14px;
@@ -275,6 +279,10 @@ box-shadow:
 ============================== */
 
 #postXBtn {
+  order: 2;
+}
+
+#postXBtn {
   margin-top: 18px;
   padding: 10px 20px;
   font-size: 14px;
@@ -309,3 +317,4 @@ box-shadow:
     padding: 10px 18px;
   }
 }
+
