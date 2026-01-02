@@ -267,3 +267,44 @@ box-shadow:
     line-height: 1.6;
   }
 }
+
+
+/* ==============================
+   Xにポストボタン
+============================== */
+
+#postXBtn {
+  margin-top: 18px;
+  padding: 12px 22px;
+  font-size: 15px;
+  font-weight: bold;
+
+  color: #fff;
+  background: linear-gradient(135deg, #1da1f2, #6ec6ff);
+
+  border: none;
+  border-radius: 999px;
+
+  box-shadow:
+    0 6px 12px rgba(29, 161, 242, 0.35);
+
+  cursor: pointer;
+}
+
+/* ホバー */
+#postXBtn:hover {
+  opacity: 0.9;
+}
+
+/* 押したとき */
+#postXBtn:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #178cd8;
+}
+
+@media (max-width: 480px) {
+  #postXBtn {
+    font-size: 16px;
+    padding: 14px 24px;
+  }
+}
