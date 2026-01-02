@@ -208,3 +208,11 @@ resultEl.innerHTML = `
   </ul>
   <p class="result-summary">合計：${total}円</p>
 `;
+
+    // 結果表示アニメーション
+    resultEl.classList.add("show");
+
+    // ボタン再有効化
+    btn.disabled = false;
+  });
+});
