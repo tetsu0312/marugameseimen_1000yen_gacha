@@ -141,7 +141,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // ユーティリティ
   // ==============================
   const pickRandom = (arr) => arr[Math.floor(Math.random() * arr.length)];
-  const shuffle = (arr) => [...arr].sort(() => Math.random() - 0.5);
 
   // weight付きカテゴリ抽選
   const pickWeightedCategory = (categories) => {
