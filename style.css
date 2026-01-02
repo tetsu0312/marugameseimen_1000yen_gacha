@@ -193,9 +193,6 @@ box-shadow:
   margin: 0 auto;
   text-align: left;
   line-height: 1.7;
-
-  /* ここが肝 */
-  white-space: pre-line;
 }
 
 /* ==============================
@@ -206,6 +203,10 @@ box-shadow:
   text-align: center;
   font-weight: bold;
   margin: 0 0 12px;
+}
+
+.hint-body {
+  white-space: pre-line;
 }
 
 /* ==============================
