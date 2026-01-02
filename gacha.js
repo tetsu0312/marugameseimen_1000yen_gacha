@@ -126,27 +126,44 @@ document.addEventListener("DOMContentLoaded", () => {
   const resultEl = document.getElementById("result");
   const spinningEl = document.getElementById("spinning");
 
-  // ===== ユーティリティ =====
+  // ==============================
+  // ユーティリティ
+  // ==============================
   const pickRandom = (arr) => arr[Math.floor(Math.random() * arr.length)];
   const shuffle = (arr) => [...arr].sort(() => Math.random() - 0.5);
+
+  // weight付きカテゴリ抽選
+  const pickWeightedCategory = (categories) => {
+    const pool = [];
+    categories.forEach(cat => {
+      for (let i = 0; i < cat.weight; i++) {
+        pool.push(cat);
+      }
+    });
+    return pickRandom(pool);
+  };
 
   btn.addEventListener("click", async () => {
     btn.disabled = true;
 
-    // ===== 表示リセット =====
+    // ==============================
+    // 表示リセット
+    // ==============================
     resultEl.classList.remove("show");
     resultEl.innerHTML = "";
     spinningEl.classList.remove("show");
 
-    // ===== スピン中メッセージ =====
+    // スピン中メッセージ
     spinningEl.textContent = pickRandom(spinningMessages);
     requestAnimationFrame(() => spinningEl.classList.add("show"));
 
     // 1.8秒待つ
-    await new Promise((resolve) => setTimeout(resolve, 1800));
+    await new Promise(resolve => setTimeout(resolve, 1800));
     spinningEl.classList.remove("show");
 
-    // ===== データ取得 =====
+    // ==============================
+    // データ取得
+    // ==============================
     const res = await fetch("menu.json");
     const data = await res.json();
 
@@ -154,17 +171,17 @@ document.addEventListener("DOMContentLoaded", () => {
     let remaining = 1000;
     const selected = [];
 
-    // =================================================
-    // ① うどんは必ず1品（温冷＋サイズ重み付き）
-    // =================================================
+    // ==============================
+    // ① うどんは必ず1品
+    // ==============================
     const udonBase = pickRandom(data.udon);
 
     // 温 or 冷
     const temp = pickRandom(udonBase.temps);
 
-    // サイズ（重み付き）
+    // サイズ（weight付き）
     const weightedSizes = [];
-    udonBase.sizes.forEach((size) => {
+    udonBase.sizes.forEach(size => {
       for (let i = 0; i < size.weight; i++) {
         weightedSizes.push(size);
       }
@@ -181,46 +198,46 @@ document.addEventListener("DOMContentLoaded", () => {
     total += udonItem.price;
     remaining -= udonItem.price;
 
-    // =================================================
-    // ② 天ぷら（余った金額から）
-    // =================================================
-    for (const item of shuffle(data.tempura)) {
-      if (item.price <= remaining) {
-        selected.push({ ...item, category: "tempura" });
-        total += item.price;
-        remaining -= item.price;
-      }
-    }
+    // ==============================
+    // ② サイドを付けるか？（80%）
+    // ==============================
+    const shouldAddSide = Math.random() < 0.8;
 
-    // =================================================
-    // ③ サイド（余った金額から）
-    // =================================================
-    for (const item of shuffle(data.side)) {
-      if (item.price <= remaining) {
-        selected.push({ ...item, category: "side" });
-        total += item.price;
-        remaining -= item.price;
-      }
-    }
+    if (shouldAddSide && remaining > 0) {
+      let continueAdding = true;
 
-    // =================================================
-    // ④ うどーなつ（あれば最後に）
-    // =================================================
-    if (Array.isArray(data.udonuts)) {
-      for (const item of shuffle(data.udonuts)) {
+      while (continueAdding) {
+        // カテゴリ抽選（天ぷら7：side2：うどーなつ1）
+        const category = pickWeightedCategory(data.sideCategories);
+
+        // そのカテゴリから1品
+        const item = pickRandom(category.items);
+
         if (item.price <= remaining) {
-          selected.push({ ...item, category: "udonuts" });
+          selected.push({
+            ...item,
+            category: category.type
+          });
           total += item.price;
           remaining -= item.price;
+        } else {
+          // 高すぎたら無理せず終了
+          break;
+        }
+
+        // 連続で付く確率を下げる（暴走防止）
+        // → だんだん止まりやすくなる
+        if (Math.random() < 0.4) {
+          continueAdding = false;
         }
       }
     }
 
-    // =================================================
+    // ==============================
     // 結果表示
-    // =================================================
+    // ==============================
     const listHtml = selected
-      .map((item) => `<li>${item.name}（${item.price}円）</li>`)
+      .map(item => `<li>${item.name}（${item.price}円）</li>`)
       .join("");
 
     const title = pickRandom(resultTitles);
