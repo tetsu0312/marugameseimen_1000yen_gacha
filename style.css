@@ -201,6 +201,11 @@ box-shadow:
 ============================== */
 
 .hint-body {
+  text-align:center;
+}
+
+.hint-body {
+  text-align:left;
   white-space: pre-line;
 }
 
