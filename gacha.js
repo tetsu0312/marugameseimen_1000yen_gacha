@@ -191,23 +191,20 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    // ===== 表示 =====
-    const listHtml = selected
-      .map(
-        item => `<li>${item.name}（${item.price}円）</li>`
-      )
-      .join("");
+    // ===== 結果表示 =====
+const listHtml = selected
+  .map(
+    item => `<li>${item.name}（${item.price}円）</li>`
+  )
+  .join("");
 
 const title =
   resultTitles[Math.floor(Math.random() * resultTitles.length)];
 
 resultEl.innerHTML = `
-  <h2 id="shop">${title}</h2>
-  <ul>${listHtml}</ul>
-  <p id="comment">合計：${total}円</p>
+  <h2 class="result-title">${title}</h2>
+  <ul class="result-list">
+    ${listHtml}
+  </ul>
+  <p class="result-summary">合計：${total}円</p>
 `;
-
-    resultEl.classList.add("show");
-    btn.disabled = false;
-  });
-});
