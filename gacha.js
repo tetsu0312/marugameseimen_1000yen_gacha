@@ -67,6 +67,17 @@ const spinningMessages = [
   "ドキドキしながら待っとこ😳✨"
 ];
 
+// ==============================
+// 結果タイトル文言パターン
+// ==============================
+const resultTitles = [
+  "今回の1000円ガチャ🥢",
+  "今日のランチはこればい！🍴",
+  "運命の1000円ランチ🎯",
+  "本日のガチャ結果はこちら😋",
+  "今日の胃袋セレクト✨"
+];
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const btn = document.getElementById("gachaBtn");
@@ -145,11 +156,14 @@ document.addEventListener("DOMContentLoaded", () => {
       )
       .join("");
 
-    resultEl.innerHTML = `
-      <h2 id="shop">今回の1000円ガチャ🥢</h2>
-      <ul>${listHtml}</ul>
-      <p id="comment">合計：${total}円（残り ${1000 - total}円）</p>
-    `;
+const title =
+  resultTitles[Math.floor(Math.random() * resultTitles.length)];
+
+resultEl.innerHTML = `
+  <h2 id="shop">${title}</h2>
+  <ul>${listHtml}</ul>
+  <p id="comment">合計：${total}円</p>
+`;
 
     resultEl.classList.add("show");
     btn.disabled = false;
