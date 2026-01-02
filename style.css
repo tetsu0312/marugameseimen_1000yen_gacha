@@ -276,7 +276,7 @@ box-shadow:
 
 #postXBtn {
   margin-top: 18px;
-  padding: 12px 22px;
+  padding: 10px 20px;
   font-size: 13px;
   font-weight: bold;
 
@@ -305,7 +305,7 @@ box-shadow:
 
 @media (max-width: 480px) {
   #postXBtn {
-    font-size: 11px;
-    padding: 12px 20px;
+    font-size: 10px;
+    padding: 10px 18px;
   }
 }
