@@ -241,14 +241,14 @@ box-shadow:
 
   /* 結果タイトル */
   .result-title {
-    font-size: 22px;      /* ← 少し存在感アップ */
+    font-size: 23px;      /* ← 少し存在感アップ */
     margin-bottom: 16px;
     line-height: 1.4;
   }
 
   /* 結果リスト */
   .result-list {
-    font-size: 16px;      /* ← 読みやすさ重視 */
+    font-size: 17px;      /* ← 読みやすさ重視 */
     line-height: 1.6;
     margin-bottom: 16px;
   }
@@ -259,7 +259,7 @@ box-shadow:
 
   /* 結果サマリー */
   .result-summary {
-    font-size: 16px;      /* ← スマホ基準サイズ */
+    font-size: 17px;      /* ← スマホ基準サイズ */
     line-height: 1.6;
   }
 }
