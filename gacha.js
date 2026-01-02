@@ -163,15 +163,15 @@ document.addEventListener("DOMContentLoaded", () => {
 function setupXPost(resultText) {
   if (!postXBtn) return;
   const tweetText = `
-丸亀製麺1000円ガチャ回してみた！🥢✨
+丸亀製麺1000円ガチャ回してみた！💡
 
-🍜 注文内容
+🥢注文内容
 ${resultText}
 
-▼ガチャはこちら
+👇ガチャはこちら
 https://tetsu0312.github.io/marugameseimen_1000yen_gacha/
 
-#丸亀製麺 #1000円ガチャ
+#丸亀製麺 #丸亀製麺1000円ガチャ
   `.trim();
 
   const url =
@@ -312,9 +312,14 @@ https://tetsu0312.github.io/marugameseimen_1000yen_gacha/
     // ==============================
     // X用 結果テキスト生成
     // ==============================
-    const resultText = selected
-    .map(item => `${item.name}（${item.price}円）`)
-    .join("、");
+const resultLines = selected.map(
+  item => `・${item.name}（${item.price}円）`
+);
+
+const resultText = `
+${resultLines.join("\n")}
+　合計:${total}円（残り:${1000 - total}円）
+`.trim();
 
     const resultTextWithTotal = `${resultText}\n合計：${total}円`;
 
