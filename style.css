@@ -181,6 +181,10 @@ box-shadow:
    結果表示（中身）
 ============================== */
 
+#result {
+  color: #000000;
+}
+
 .result-title {
   font-size: 22px;
   color: #1f3b57;
@@ -195,6 +199,7 @@ box-shadow:
 
 .result-list li {
   margin-bottom: 6px;
+  color: #fff;
 }
 
 .result-summary {
