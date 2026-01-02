@@ -14,4 +14,4 @@ https://tetsu0312.github.io/marugameseimen_1000yen_gacha/
 - about.html：このサイトについて
 - style.css：スタイル
 - script.js：ガチャの処理
-- menu.json：ランチデータ
+- menu.json：データ
