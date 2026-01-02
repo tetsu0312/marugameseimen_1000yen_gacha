@@ -158,7 +158,7 @@ body {
     border-radius: 12px;
   }
 
-  h1 {
+  .center-lane h1 {
     font-size: 22px;
     margin-bottom: 16px;
   }
@@ -169,17 +169,37 @@ body {
     margin-bottom: 12px;
   }
 
-  #result {
-    margin-top: 24px;
-  }
-
-  #shop {
+  .result-title {
     font-size: 18px;
   }
 
-  #comment {
+  .result-summary {
     font-size: 14px;
   }
+}
+
+/* ==============================
+   結果表示（中身）
+============================== */
+
+.result-title {
+  font-size: 22px;
+  color: #1f3b57;
+  margin-bottom: 12px;
+}
+
+.result-list {
+  margin: 0 0 12px;
+  padding-left: 1.2em;
+}
+
+.result-list li {
+  margin-bottom: 6px;
+}
+
+.result-summary {
+  font-size: 16px;
+  color: #555;
 }
 
 
