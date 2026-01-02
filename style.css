@@ -168,8 +168,9 @@ box-shadow:
 
 .footer {
   margin-top: auto;
-  padding-top: 24px;
+  padding-top: 28px;
   font-size: 14px;
+  line-height: 1.6;
 }
 
 .footer a {
