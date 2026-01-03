@@ -163,20 +163,32 @@ box-shadow:
 /* ==============================
    大当たりメッセージ調整用
 ============================== */
-
 .god-message {
-  animation: pop 0.6s ease-out;
-}
+  margin-top: 14px;
+  padding: 10px 16px;
 
-@keyframes pop {
-  0% {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+
+  color: #fff;
+  background: linear-gradient(
+    135deg,
+    #ff7a00,
+    #ffb703,
+    #ff7a00
+  );
+
+  border-radius: 999px;
+  text-align: center;
+
+  box-shadow:
+    0 6px 0 #d96c00,
+    0 10px 20px rgba(255, 140, 0, 0.45);
+
+  animation:
+    pop 0.5s ease-out,
+    shine 1.8s linear infinite;
 }
 
 /* ==============================
