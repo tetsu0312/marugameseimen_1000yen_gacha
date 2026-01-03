@@ -174,12 +174,8 @@ box-shadow:
 
   text-align: center;
 
-text-shadow:
-  0 3px 8px rgba(255, 120, 0, 0.6),
-  0 0 20px rgba(255, 220, 0, 0.85);
-
   animation:
-    pop 1s ease-out 1s forwards,
+    pop 1.2s ease-out 1.2s forwards,
     shine 2s ease-in-out 0.9s infinite;
 }
 
