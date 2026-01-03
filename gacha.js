@@ -163,10 +163,10 @@ document.addEventListener("DOMContentLoaded", () => {
 function setupXPost(title, resultText);
   if (!postXBtn) return;
   const tweetText = `
-丸亀製麺1000円ガチャを回してみた😆
+丸亀製麺1000円ガチャを回してみた🥢
 
-${title}
-🥢注文内容
+　${title}
+📖注文内容
 ${resultText}
 
 👇ガチャはこちら
