@@ -326,8 +326,7 @@ https://tetsu0312.github.io/marugameseimen_1000yen_gacha/
     const title = pickRandom(resultTitles);
     // 950円以上なら大当たりメッセージ表示
     const isGod = total >= 950;
-    const godHtml =
-    total >= 950
+    const godHtml = isGod
     ? `<p class="god-message">${pickRandom(godMessages)}</p>`
     : "";
 
