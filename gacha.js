@@ -180,18 +180,24 @@ document.addEventListener("DOMContentLoaded", () => {
   // Xにポスト設定
   // ==============================
   const postXBtn = document.getElementById("postXBtn");
+  const isGod = total >= 950;
 
-function setupXPost(title, resultText){
+function setupXPost(title, resultText, isGod)){
   if (!postXBtn) return;
+
+    const godLine = isGod
+    ? `${pickRandom(godMessages)}`
+    : "";
+  
   const tweetText = `
 丸亀製麺1000円ガチャ回してみた🥢
 
 ${title}
 ${resultText}
+${godLine}
 
 👇ガチャ
 https://tetsu0312.github.io/marugameseimen_1000yen_gacha/
-
 #丸亀製麺 #丸亀製麺1000円ガチャ
   `.trim();
 
@@ -348,7 +354,7 @@ ${resultLines.join("\n")}
 　合計:${total}円（残り:${1000 - total}円）
 `.trim();
 
-setupXPost(title, resultText);
+setupXPost(title, resultText, isGod);
 
     resultEl.classList.add("show");
     btn.disabled = false;
