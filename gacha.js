@@ -163,13 +163,12 @@ document.addEventListener("DOMContentLoaded", () => {
 function setupXPost(title, resultText){
   if (!postXBtn) return;
   const tweetText = `
-丸亀製麺1000円ガチャを回してみた🥢
+丸亀製麺1000円ガチャ回してみた🥢
 
-　${title}
-📖注文内容
+${title}
 ${resultText}
 
-👇ガチャはこちら
+👇ガチャ
 https://tetsu0312.github.io/marugameseimen_1000yen_gacha/
 
 #丸亀製麺 #丸亀製麺1000円ガチャ
