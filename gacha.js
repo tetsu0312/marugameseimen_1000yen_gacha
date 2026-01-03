@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ==============================
   const postXBtn = document.getElementById("postXBtn");
 
-function setupXPost(title, resultText);
+function setupXPost(title, resultText){
   if (!postXBtn) return;
   const tweetText = `
 丸亀製麺1000円ガチャを回してみた🥢
@@ -322,7 +322,7 @@ ${resultLines.join("\n")}
 　合計:${total}円（残り:${1000 - total}円）
 `.trim();
 
-setupXPost(resultText);
+setupXPost(title, resultText);
 
     resultEl.classList.add("show");
     btn.disabled = false;
