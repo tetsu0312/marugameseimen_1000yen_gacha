@@ -165,30 +165,22 @@ box-shadow:
 ============================== */
 .god-message {
   margin-top: 14px;
-  padding: 10px 16px;
 
   font-size: 22px;
   font-weight: 900;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
 
-  color: #fff;
-  background: linear-gradient(
-    135deg,
-    #ff7a00,
-    #ffb703,
-    #ff7a00
-  );
+  color: #e85d04; /* 当たり感のある濃いオレンジ */
 
-  border-radius: 999px;
   text-align: center;
 
-  box-shadow:
-    0 6px 0 #d96c00,
-    0 10px 20px rgba(255, 140, 0, 0.45);
+  text-shadow:
+    0 2px 6px rgba(255, 140, 0, 0.45),
+    0 0 12px rgba(255, 200, 0, 0.6);
 
   animation:
     pop 0.5s ease-out,
-    shine 1.8s linear infinite;
+    shine 1.8s ease-in-out infinite;
 }
 
 /* ==============================
