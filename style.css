@@ -179,7 +179,7 @@ text-shadow:
   0 0 20px rgba(255, 220, 0, 0.85);
 
   animation:
-    pop 0.7s ease-out 0.7s forwards,
+    pop 1s ease-out 1s forwards,
     shine 2s ease-in-out 0.9s infinite;
 }
 
