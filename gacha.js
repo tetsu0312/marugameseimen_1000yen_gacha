@@ -163,7 +163,6 @@ const resultTitles = [
 const godMessages = [
   "🎉✨ 神引き！！✨🎉",
   "🙏✨ 大当たり！！✨🙏",
-  "💯✨ 今日の運、強すぎる！✨💯",
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
