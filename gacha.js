@@ -180,9 +180,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Xにポスト設定
   // ==============================
   const postXBtn = document.getElementById("postXBtn");
-  const isGod = total >= 950;
 
-function setupXPost(title, resultText, isGod)){
+function setupXPost(title, resultText, isGod){
   if (!postXBtn) return;
 
     const godLine = isGod
@@ -325,8 +324,8 @@ https://tetsu0312.github.io/marugameseimen_1000yen_gacha/
       .join("");
 
     const title = pickRandom(resultTitles);
-
     // 950円以上なら大当たりメッセージ表示
+    const isGod = total >= 950;
     const godHtml =
     total >= 950
     ? `<p class="god-message">${pickRandom(godMessages)}</p>`
@@ -340,6 +339,7 @@ https://tetsu0312.github.io/marugameseimen_1000yen_gacha/
       <p class="result-summary">
         合計:${total}円（残り:${1000 - total}円）
       </p>
+      ${godHtml}
     `;
 
     // ==============================
