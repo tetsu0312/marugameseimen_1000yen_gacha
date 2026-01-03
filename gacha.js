@@ -256,9 +256,9 @@ https://tetsu0312.github.io/marugameseimen_1000yen_gacha/
     remaining -= udonItem.price;
 
     // ==============================
-    // ② サイドを付けるか？（90%）
+    // ② サイドを付けるか？（95%）
     // ==============================
-    const shouldAddSide = Math.random() < 0.9;
+    const shouldAddSide = Math.random() < 0.95;
 
     if (shouldAddSide && remaining > 0) {
       let continueAdding = true;
@@ -283,8 +283,8 @@ https://tetsu0312.github.io/marugameseimen_1000yen_gacha/
         }
 
         // 連続で付く確率を下げる（暴走防止）
-        // → だんだん止まりやすくなる
-        if (Math.random() < 0.4) {
+        // → だんだん止まりやすくなる。値を小さくするとサイドが増えやすくなる。
+        if (Math.random() < 0.35) {
           continueAdding = false;
         }
       }
