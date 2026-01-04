@@ -312,7 +312,7 @@ https://tetsu0312.github.io/marugameseimen_1000yen_gacha/
 
         // 連続で付く確率を下げる（暴走防止）
         // → だんだん止まりやすくなる。値を小さくするとサイドが増えやすくなる。
-        if (Math.random() < 0.35) {
+        if (Math.random() < 0.3) {
           continueAdding = false;
         }
       }
