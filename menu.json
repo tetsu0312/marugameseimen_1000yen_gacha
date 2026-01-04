@@ -12,7 +12,7 @@
       "name": "鴨ねぎうどん",
       "temps": ["温"],
       "sizes": [
-        { "size": "並", "price": 920, "weight": 5 },
+        { "size": "並", "price": 920, "weight": 5 }
       ]
     },
     
