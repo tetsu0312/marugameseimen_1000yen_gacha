@@ -196,9 +196,9 @@ function setupXPost(title, resultText, isGod){
 ${title}
 ${resultText}
 ${godLine}
-
 👇ガチャ
 https://tetsu0312.github.io/marugameseimen_1000yen_gacha/
+
 #丸亀製麺 #丸亀製麺1000円ガチャ
   `.trim();
 
