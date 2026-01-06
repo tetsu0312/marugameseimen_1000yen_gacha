@@ -147,7 +147,7 @@
       ]
     },
     {
-      "type": "side",
+      "type": "gohanmono",
       "weight": 2,
       "items": [
         { "name": "いなり", "price": 150 },

@@ -319,6 +319,21 @@ while (true) {
   remaining -= picked.price;
 }
 
+// ==============================
+// 表示用に並び順を整える
+// ==============================
+const categoryOrder = {
+  udon: 0,
+  tempura: 1,
+  gohanmono: 2,
+  topping: 3,
+  udonuts: 4,
+};
+
+selected.sort((a, b) => {
+  return categoryOrder[a.category] - categoryOrder[b.category];
+});
+
     // ==============================
     // 結果表示
     // ==============================
