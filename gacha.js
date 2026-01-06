@@ -289,33 +289,40 @@ https://tetsu0312.github.io/marugameseimen_1000yen_gacha/
     const shouldAddSide = Math.random() < 0.95;
 
     if (shouldAddSide && remaining > 0) {
-      let continueAdding = true;
 
-      while (continueAdding) {
-        // カテゴリ抽選（天ぷら7：side2：うどーなつ1）
-        const category = pickWeightedCategory(data.sideCategories);
+      while (true) {
+  // 残金で買える商品だけを集める
+  const affordableItems = [];
 
-        // そのカテゴリから1品
-        const item = pickRandom(category.items);
-
-        if (item.price <= remaining) {
-          selected.push({
-            ...item,
-            category: category.type
-          });
-          total += item.price;
-          remaining -= item.price;
-        } else {
-          // 高すぎたら無理せず終了
-          break;
-        }
-
-        // 連続で付く確率を下げる（暴走防止）
-        // → だんだん止まりやすくなる。値を小さくするとサイドが増えやすくなる。
-        if (Math.random() < 0.3) {
-          continueAdding = false;
-        }
+  data.sideCategories.forEach(cat => {
+    cat.items.forEach(item => {
+      if (item.price <= remaining) {
+        affordableItems.push({
+          ...item,
+          category: cat.type,
+          weight: cat.weight
+        });
       }
+    });
+  });
+
+  // もう何も買えんときは終了
+  if (affordableItems.length === 0) break;
+
+  // weight考慮して抽選
+  const weightedPool = [];
+  affordableItems.forEach(item => {
+    for (let i = 0; i < item.weight; i++) {
+      weightedPool.push(item);
+    }
+  });
+
+  const picked = pickRandom(weightedPool);
+
+  selected.push(picked);
+  total += picked.price;
+  remaining -= picked.price;
+}
     }
 
     // ==============================
