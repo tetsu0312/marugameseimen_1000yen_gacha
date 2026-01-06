@@ -159,13 +159,12 @@ const resultTitles = [
 ];
 
 // ==============================
-// 大当たりメッセージ
+// 1000円ピッタリメッセージ
 // ==============================
 const godMessages = [
-  "🎉✨ 神引き！！✨🎉",
-  "🙏✨ 神引ききたー！！✨🙏",
-  "😆✨ 神引きー！！✨😆",
-  "😊✨ 今日の神引き！✨😊",
+  "😆✨ 1000円ピッタリ神引き！！✨😆",
+  "😇✨ 1000円ジャスト！！✨😇",
+  "😆✨ 1000円ちょうど！！✨😆",
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -333,8 +332,8 @@ https://tetsu0312.github.io/marugameseimen_1000yen_gacha/
       .join("");
 
     const title = pickRandom(resultTitles);
-    // 950円以上なら大当たりメッセージ表示
-    const isGod = total >= 950;
+    // 1000円ピッタリなら大当たりメッセージ表示
+    const isGod = total >= 1000;
     const godHtml = isGod
     ? `<p class="god-message">${pickRandom(godMessages)}</p>`
     : "";
