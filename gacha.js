@@ -282,14 +282,10 @@ https://tetsu0312.github.io/marugameseimen_1000yen_gacha/
     total += udonItem.price;
     remaining -= udonItem.price;
 
-    // ==============================
-    // ② サイドを付けるか？（95%）
-    // ==============================
-    const shouldAddSide = Math.random() < 0.95;
-
-    if (shouldAddSide && remaining > 0) {
-
-      while (true) {
+  // ==============================
+// ② 残金がある限り、必ず詰める
+// ==============================
+while (true) {
   // 残金で買える商品だけを集める
   const affordableItems = [];
 
@@ -322,7 +318,6 @@ https://tetsu0312.github.io/marugameseimen_1000yen_gacha/
   total += picked.price;
   remaining -= picked.price;
 }
-    }
 
     // ==============================
     // 結果表示
