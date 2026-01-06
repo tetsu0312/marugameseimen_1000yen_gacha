@@ -15,7 +15,20 @@
         { "size": "並", "price": 920, "weight": 5 }
       ]
     },
-    
+    {
+      "name": "焼きたて肉ぶっかけうどん",
+      "temps": ["温", "冷"],
+      "sizes": [
+        { "size": "並", "price": 840, "weight": 7 }
+      ]
+    },
+    {
+      "name": "焼きたて肉うどん",
+      "temps": ["温"],
+      "sizes": [
+        { "size": "並", "price": 840, "weight": 7 }
+      ]
+    },
     {
       "name": "釜揚げうどん",
       "temps": ["温"],
@@ -107,9 +120,17 @@
         { "size": "大", "price": 770, "weight": 2 },
         { "size": "得", "price": 950, "weight": 1 }
       ]
+    },
+    {
+      "name": "カレーうどん",
+      "temps": ["温"],
+      "sizes": [
+        { "size": "並", "price": 640, "weight": 7 },
+        { "size": "大", "price": 820, "weight": 2 },
+        { "size": "得", "price": 1000, "weight": 1 }
+      ]
     }
   ],
-
   "sideCategories": [
     {
       "type": "tempura",
