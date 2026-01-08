@@ -129,6 +129,7 @@ def build_tweet_text(selected, total, remaining):
 # 動作確認
 # ==============================
 if __name__ == "__main__":
+    print("=== gacha.py 実行されたばい ===")
     selected, total, remaining = run_gacha()
     tweet_text = build_tweet_text(selected, total, remaining)
     print(tweet_text)
