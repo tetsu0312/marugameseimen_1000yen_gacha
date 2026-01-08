@@ -63,6 +63,7 @@ def fill_sides(data, remaining):
 
         picked = pick_random(affordable_items)
         selected.append(picked)
+        remaining -= picked["price"]
 
     return selected
 
