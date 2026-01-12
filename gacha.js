@@ -240,8 +240,8 @@ https://tetsu0312.github.io/marugameseimen_1000yen_gacha/
     spinningEl.textContent = pickRandom(spinningMessages);
     requestAnimationFrame(() => spinningEl.classList.add("show"));
 
-    // 1.6秒待つ
-    await new Promise(resolve => setTimeout(resolve, 1600));
+    // 1.5秒待つ
+    await new Promise(resolve => setTimeout(resolve, 1500));
     spinningEl.classList.remove("show");
 
     // ==============================
