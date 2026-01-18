@@ -110,7 +110,8 @@ box-shadow:
 ============================== */
 
 #spinning {
-  margin-top: 6px;
+  margin-top: 4px;
+  margin-bottom: 0px;
   font-size: 18px;
   opacity: 0;
   transform: translateY(6px);
