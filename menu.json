@@ -123,8 +123,7 @@
       "temps": ["温"],
       "sizes": [
         { "size": "並", "price": 660, "weight": 7 },
-        { "size": "大", "price": 850, "weight": 2 },
-        { "size": "得", "price": 1040, "weight": 1 }
+        { "size": "大", "price": 850, "weight": 2 }
       ]
     }
   ],
