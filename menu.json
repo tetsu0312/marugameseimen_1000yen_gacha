@@ -3,30 +3,38 @@
     "source": "https://jp.marugame.com/menu/udon/?filter=shop",
     "notes": [
       "対象外：期間限定、店舗限定、釜揚げ家族うどん／丸亀お子さまもちもちセット"
-      ],
-    "updated_hint": "2026-01-02"
+    ],
+    "updated_hint": "2026-03-29"
   },
-
   "udon": [
-     {
-      "name": "肉がさね玉子あんかけうどん",
-      "temps": ["温"],
-      "sizes": [
-        { "size": "並", "price": 840, "weight": 5 }
-      ]
-    },
-{
-      "name": "玉子好きのためのだし玉肉づつみうどん",
+    {
+      "name": "こく旨 豚玉ぶっかけ",
       "temps": ["温"],
       "sizes": [
         { "size": "並", "price": 890, "weight": 5 }
       ]
     },
-        {
-      "name": "鴨ねぎうどん",
+    {
+      "name": "山盛りあさりうどん",
       "temps": ["温"],
       "sizes": [
-        { "size": "並", "price": 920, "weight": 5 }
+        { "size": "並", "price": 840, "weight": 5 }
+      ]
+    },
+    {
+      "name": "山菜うどん",
+      "temps": ["温"],
+      "sizes": [
+        { "size": "並", "price": 640, "weight": 5 },
+        { "size": "大", "price": 830, "weight": 2 }
+      ]
+    },
+    {
+      "name": "明太クリームうどん",
+      "temps": ["温"],
+      "sizes": [
+        { "size": "並", "price": 690, "weight": 5 },
+        { "size": "大", "price": 880, "weight": 2 }
       ]
     },
     {
@@ -130,7 +138,7 @@
   "sideCategories": [
     {
       "type": "tempura",
-      "weight": 7,
+      "weight": 8,
       "items": [
         { "name": "かしわ天", "price": 220 },
         { "name": "野菜かき揚げ", "price": 200 },
@@ -152,12 +160,11 @@
         { "name": "明太子おにぎり", "price": 170 },
         { "name": "こんぶおにぎり", "price": 170 },
         { "name": "白ごはん（並）", "price": 180 },
-        { "name": "白ごはん（大）", "price": 230 }
       ]
     },
-       {
+    {
       "type": "topping",
-      "weight": 1,
+      "weight": 2,
       "items": [
         { "name": "大根おろし", "price": 90 },
         { "name": "明太子", "price": 90 },
@@ -168,10 +175,9 @@
     },
     {
       "type": "udonuts",
-      "weight": 1,
+      "weight": 2,
       "items": [
-        { "name": "うどーなつ濃厚ダブルチョコ ごほうびチョコ味", "price": 370 },
-        { "name": "うどーなつ濃厚ダブルチョコ しあわせミルク味", "price": 370 },
+        { "name": "うどーなつ チョコ味", "price": 350 },
         { "name": "うどーなつ きなこ味", "price": 300 },
         { "name": "うどーなつ きび糖味", "price": 300 }
       ]
