@@ -2,36 +2,28 @@
   "meta": {
     "source": "https://jp.marugame.com/menu/udon/?filter=shop",
     "notes": [
-      "対象外：期間限定、店舗限定、釜揚げ家族うどん／丸亀お子さまもちもちセット"
+      "対象外：期間限定、店舗限定、釜揚げ家族うどん／丸亀お子さまもちもちセット。なお、期間限定は一部のうどんメニューのみ登録した。"
     ],
-    "updated_hint": "2026-03-29"
+    "updated_hint": "2026-08-11"
   },
   "udon": [
     {
-      "name": "こく旨 豚玉ぶっかけ",
-      "temps": ["温"],
+      "name": "鬼おろし豚しゃぶぶっかけうどん",
+      "temps": ["冷"],
+      "sizes": [
+        { "size": "並", "price": 860, "weight": 5 }
+      ]
+    },
+    {
+      "name": "鬼冷たーい山盛り海鮮旨塩うどん",
+      "temps": ["冷"],
       "sizes": [
         { "size": "並", "price": 890, "weight": 5 }
       ]
     },
     {
-      "name": "山盛りあさりうどん",
-      "temps": ["温"],
-      "sizes": [
-        { "size": "並", "price": 840, "weight": 5 }
-      ]
-    },
-    {
-      "name": "山菜うどん",
-      "temps": ["温"],
-      "sizes": [
-        { "size": "並", "price": 640, "weight": 5 },
-        { "size": "大", "price": 830, "weight": 2 }
-      ]
-    },
-    {
-      "name": "明太クリームうどん",
-      "temps": ["温"],
+      "name": "冷やし明太クリームうどん",
+      "temps": ["冷"],
       "sizes": [
         { "size": "並", "price": 690, "weight": 5 },
         { "size": "大", "price": 880, "weight": 2 }
